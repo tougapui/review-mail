@@ -7,12 +7,40 @@
 @media(max-height:1000px) and (min-width:761px){main{padding-top:28px}.episode-meta{margin-bottom:24px}.field{margin-bottom:22px}.actionbar{min-height:90px;padding-top:18px;padding-bottom:18px}.toast{bottom:106px}}
 @media(max-width:760px){:root{font-size:16px}.topbar{height:64px;padding:0 20px}.topbar h1{font-size:24px}.settings-button{font-size:17px}.icon{width:21px;height:21px}.tabs{margin:0 16px;height:57px}.tab{font-size:18px;min-width:80px;padding:0 18px}main{padding:26px 0 170px}.editor,.preview,.storage-warning{width:calc(100% - 40px)}.episode-meta{grid-template-columns:1fr 1.3fr;gap:20px 16px;margin-bottom:24px}.episode-meta .field:first-child{grid-column:1/-1}.field{margin-bottom:24px}.field>label,.label{font-size:16px}.optional{font-size:15px}.field input,.field select,.field textarea{font-size:17px;min-height:48px;padding:10px 12px}input::placeholder,textarea::placeholder{font-size:16px}#title{height:76px}#copy{height:230px;padding:12px;min-height:200px}.check{font-size:16px;gap:9px}input[type=checkbox]{width:21px;height:21px}.actionbar{left:16px;right:16px;min-height:136px;gap:15px;padding:15px 4px 20px;align-items:stretch;flex-direction:column}.action-buttons{gap:10px;display:grid;grid-template-columns:1fr 1fr 1.25fr}.button{font-size:14px;padding:10px 6px;min-height:46px;gap:5px}.action-buttons .icon{width:16px;height:16px}.toast{bottom:150px;font-size:14px;width:max-content}.mail-line{gap:14px;font-size:15px}.mail-label{flex-basis:54px}#pvSubject{font-size:19px}#pvBody{font-size:16px}.dialog-body,.dialog-head,.dialog-foot{padding-left:20px;padding-right:20px}.settings-tools{align-items:flex-start;flex-direction:column}}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
+
+.panel-heading{display:none}
+.backup-area{padding-top:18px;margin-top:22px;border-top:1px solid var(--line)}
+.backup-area h3{font-size:15px;margin:0 0 10px}
+.backup-actions{display:flex;flex-wrap:wrap;gap:10px}
+.backup-actions .button{font-size:14px;min-height:42px;padding:9px 14px}
+.backup-area p{font-size:12px;color:var(--muted);margin:10px 0 0}
+@media(min-width:1024px){
+ .topbar{height:64px;padding:0 3.5%}.topbar h1{font-size:24px}.settings-button{font-size:17px}
+ .tabs{display:none}main{padding:22px 3.5% 120px}
+ .workspace{max-width:1600px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,1fr);gap:30px;align-items:start}
+ .editor,.preview{width:auto;max-width:none;min-width:0;margin:0}
+ .panel-heading{display:block;font-size:16px;font-weight:600;margin:0 0 20px;padding-bottom:12px;border-bottom:1px solid var(--line)}
+ .preview{position:sticky;top:22px;max-height:calc(100dvh - 136px);overflow-y:auto;border-left:1px solid var(--line);padding:0 0 12px 28px;scrollbar-width:thin}
+ .episode-meta{grid-template-columns:minmax(0,1.25fr) minmax(64px,.45fr) minmax(0,.9fr);gap:12px;margin-bottom:18px}
+ .field{margin-bottom:18px}.field>label,.label{font-size:15px;margin-bottom:6px}.optional{font-size:14px}
+ .editor input:not([type=checkbox]),.editor select,.editor textarea{font-size:16px;padding:9px 11px;min-height:44px}
+ .editor input::placeholder,.editor textarea::placeholder{font-size:15px}
+ #title{height:66px;min-height:66px}#copy{min-height:164px;height:23vh;padding:10px 12px}
+ .check{font-size:16px;gap:9px}input[type=checkbox]{width:19px;height:19px}#sponsorWrap{margin-top:16px}
+ .mail-meta{padding-bottom:16px}.mail-line{font-size:14px;gap:14px;margin-bottom:10px}.mail-label{flex-basis:50px}
+ .subject-area{padding:16px 0}.eyebrow{font-size:13px;margin-bottom:8px}#pvSubject{font-size:17px;line-height:1.7}
+ #pvBody{font-size:15px;line-height:1.9;padding:18px 0}.preview-note{font-size:12px}.setup-banner{font-size:13px;padding:11px 12px;margin-bottom:18px}
+ .actionbar{min-height:78px;padding:15px 0;max-width:1600px;margin:0 auto}.actionbar .button{font-size:16px;min-height:46px;padding:10px 22px}.action-buttons{gap:14px}
+ .toast{bottom:94px}.storage-warning{width:100%;max-width:1600px}
+}
 </style></head><body>
 <header class="topbar"><h1>審聽信</h1><button class="settings-button" id="settingsBtn" aria-label="寄信設定"><img class="icon" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTYgMjU2IiBmaWxsPSJjdXJyZW50Q29sb3IiPjxwYXRoIGQ9Ik0xMjgsODBhNDgsNDgsMCwxLDAsNDgsNDhBNDguMDUsNDguMDUsMCwwLDAsMTI4LDgwWm0wLDgwYTMyLDMyLDAsMSwxLDMyLTMyQTMyLDMyLDAsMCwxLDEyOCwxNjBabTEwOS45NC01Mi43OWE4LDgsMCwwLDAtMy44OS01LjRsLTI5LjgzLTE3LS4xMi0zMy42MmE4LDgsMCwwLDAtMi44My02LjA4LDExMS45MSwxMTEuOTEsMCwwLDAtMzYuNzItMjAuNjcsOCw4LDAsMCwwLTYuNDYuNTlMMTI4LDQxLjg1LDk3Ljg4LDI1YTgsOCwwLDAsMC02LjQ3LS42QTExMi4xLDExMi4xLDAsMCwwLDU0LjczLDQ1LjE1YTgsOCwwLDAsMC0yLjgzLDYuMDdsLS4xNSwzMy42NS0yOS44MywxN2E4LDgsMCwwLDAtMy44OSw1LjQsMTA2LjQ3LDEwNi40NywwLDAsMCwwLDQxLjU2LDgsOCwwLDAsMCwzLjg5LDUuNGwyOS44MywxNywuMTIsMzMuNjJhOCw4LDAsMCwwLDIuODMsNi4wOCwxMTEuOTEsMTExLjkxLDAsMCwwLDM2LjcyLDIwLjY3LDgsOCwwLDAsMCw2LjQ2LS41OUwxMjgsMjE0LjE1LDE1OC4xMiwyMzFhNy45MSw3LjkxLDAsMCwwLDMuOSwxLDguMDksOC4wOSwwLDAsMCwyLjU3LS40MiwxMTIuMSwxMTIuMSwwLDAsMCwzNi42OC0yMC43Myw4LDgsMCwwLDAsMi44My02LjA3bC4xNS0zMy42NSwyOS44My0xN2E4LDgsMCwwLDAsMy44OS01LjRBMTA2LjQ3LDEwNi40NywwLDAsMCwyMzcuOTQsMTA3LjIxWm0tMTUsMzQuOTEtMjguNTcsMTYuMjVhOCw4LDAsMCwwLTMsM2MtLjU4LDEtMS4xOSwyLjA2LTEuODEsMy4wNmE3Ljk0LDcuOTQsMCwwLDAtMS4yMiw0LjIxbC0uMTUsMzIuMjVhOTUuODksOTUuODksMCwwLDEtMjUuMzcsMTQuM0wxMzQsMTk5LjEzYTgsOCwwLDAsMC0zLjkxLTFoLS4xOWMtMS4yMSwwLTIuNDMsMC0zLjY0LDBhOC4wOCw4LjA4LDAsMCwwLTQuMSwxbC0yOC44NCwxNi4xQTk2LDk2LDAsMCwxLDY3Ljg4LDIwMWwtLjExLTMyLjJhOCw4LDAsMCwwLTEuMjItNC4yMmMtLjYyLTEtMS4yMy0yLTEuOC0zLjA2YTguMDksOC4wOSwwLDAsMC0zLTMuMDZsLTI4LjYtMTYuMjlhOTAuNDksOTAuNDksMCwwLDEsMC0yOC4yNkw2MS42Nyw5Ny42M2E4LDgsMCwwLDAsMy0zYy41OC0xLDEuMTktMi4wNiwxLjgxLTMuMDZhNy45NCw3Ljk0LDAsMCwwLDEuMjItNC4yMWwuMTUtMzIuMjVhOTUuODksOTUuODksMCwwLDEsMjUuMzctMTQuM0wxMjIsNTYuODdhOCw4LDAsMCwwLDQuMSwxYzEuMjEsMCwyLjQzLDAsMy42NCwwYTguMDgsOC4wOCwwLDAsMCw0LjEtMWwyOC44NC0xNi4xQTk2LDk2LDAsMCwxLDE4OC4xMiw1NWwuMTEsMzIuMmE4LDgsMCwwLDAsMS4yMiw0LjIyYy42MiwxLDEuMjMsMiwxLjgsMy4wNmE4LjA5LDguMDksMCwwLDAsMywzLjA2bDI4LjYsMTYuMjlBOTAuNDksOTAuNDksMCwwLDEsMjIyLjksMTQyLjEyWiIvPjwvc3ZnPg==" alt="">設定</button></header>
 <nav class="tabs" role="tablist" aria-label="信件工作區"><button class="tab" id="editTab" role="tab" aria-selected="true" aria-controls="editPanel">編輯</button><button class="tab" id="previewTab" role="tab" aria-selected="false" aria-controls="previewPanel" tabindex="-1">預覽</button></nav>
 <main>
 <div id="storageWarning" class="storage-warning" hidden>瀏覽器目前無法儲存資料。關閉後不會保留設定與內容。</div>
+<div class="workspace">
 <section id="editPanel" role="tabpanel" aria-labelledby="editTab" class="editor">
+<h2 class="panel-heading" id="editHeading">編輯</h2>
 <form id="episodeForm" autocomplete="off">
 <div class="episode-meta">
 <div class="field"><label for="showSelect">節目</label><select id="showSelect" name="show"><option value="投資不踩雷S2">投資不踩雷S2</option><option value="投資問診室">投資問診室</option><option value="鏡錶誌">鏡錶誌</option><option value="財經鏡來談">財經鏡來談</option><option value="__other__">其他節目</option></select></div>
@@ -28,12 +56,14 @@
 </form>
 </section>
 <section id="previewPanel" role="tabpanel" aria-labelledby="previewTab" class="preview" hidden>
+<h2 class="panel-heading" id="previewHeading">信件預覽</h2>
 <div class="setup-banner" id="setupBanner">請先<button id="setupLink">設定收件人與署名</button>，也可以匯入舊版 HTML。</div>
 <div class="mail-meta"><div class="mail-line"><span class="mail-label">收件人</span><span id="toLine">尚未設定</span></div><div class="mail-line"><span class="mail-label">CC</span><span id="ccLine">—</span></div></div>
 <div class="subject-area"><span class="eyebrow">主旨</span><div id="pvSubject"></div></div><div id="pvBody"></div>
 <p class="long-note" id="longNote" hidden>文案較長，Gmail 可能無法完整帶入。開啟後請確認，也可以複製內文貼上。</p>
 <p class="preview-note">音檔請到 Gmail 加入附件；開啟草稿後，仍需自行按下寄出。</p>
 </section>
+</div>
 </main>
 <footer class="actionbar"><label class="check" for="rememberDraft"><input id="rememberDraft" type="checkbox" checked>保留內容</label><div class="action-buttons"><button class="button" id="copySubject">複製主旨</button><button class="button" id="copyBody">複製內文</button><button class="button primary" id="gmailBtn">開啟 Gmail<img class="icon" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTYgMjU2IiBmaWxsPSJjdXJyZW50Q29sb3IiPjxwYXRoIGQ9Ik0yMjQsMTA0YTgsOCwwLDAsMS0xNiwwVjU5LjMybC02Ni4zMyw2Ni4zNGE4LDgsMCwwLDEtMTEuMzItMTEuMzJMMTk2LjY4LDQ4SDE1MmE4LDgsMCwwLDEsMC0xNmg2NGE4LDgsMCwwLDEsOCw4Wm0tNDAsMjRhOCw4LDAsMCwwLTgsOHY3Mkg0OFY4MGg3MmE4LDgsMCwwLDAsMC0xNkg0OEExNiwxNiwwLDAsMCwzMiw4MFYyMDhhMTYsMTYsMCwwLDAsMTYsMTZIMTc2YTE2LDE2LDAsMCwwLDE2LTE2VjEzNkE4LDgsMCwwLDAsMTg0LDEyOFoiLz48L3N2Zz4=" alt=""></button></div></footer>
 <dialog id="settingsDialog" aria-labelledby="settingsTitle"><form id="settingsForm"><div class="dialog-head"><h2 id="settingsTitle">寄信設定</h2><button class="close" type="button" aria-label="關閉設定" id="closeSettings">×</button></div><div class="dialog-body"><p>設定一次，以後自動帶入。換瀏覽器或清除網站資料後，需要重新設定。</p>
@@ -43,7 +73,7 @@
 <div class="field"><label for="settingSponsorCc">有贊助時增加的 CC<span class="optional">選填</span></label><input type="text" id="settingSponsorCc" placeholder="多個信箱可用逗號分隔"></div>
 <details><summary>問候語</summary><div class="settings-extra field"><label for="settingIntro">沒有開頭備註時使用</label><textarea id="settingIntro" rows="2"></textarea></div></details>
 <p class="error" id="settingsError" role="alert" hidden></p>
-<div class="settings-tools"><span id="saveStatus" class="storage-status" role="status"></span><button class="button" type="button" id="clearEpisode">清空本集</button></div><div class="import-area"><button class="button" type="button" id="importBtn">匯入舊版 HTML 設定</button><input type="file" id="importFile" accept=".html,.htm" hidden><p>選取原本的「審聽信產生器.html」，只讀取信箱、稱呼與署名。檔案在這個瀏覽器內讀取，不會上傳。</p></div>
+<div class="backup-area"><h3>設定備份</h3><div class="backup-actions"><button class="button" type="button" id="exportSettings">下載設定備份</button><button class="button" type="button" id="loadSettings">載入設定</button><input type="file" id="backupFile" accept=".json,application/json" hidden></div><p>備份包含信箱、稱呼、署名與問候語，請妥善保存。載入後可先確認，再按「儲存設定」套用。</p></div><div class="settings-tools"><span id="saveStatus" class="storage-status" role="status"></span><button class="button" type="button" id="clearEpisode">清空本集</button></div><div class="import-area"><button class="button" type="button" id="importBtn">匯入舊版 HTML 設定</button><input type="file" id="importFile" accept=".html,.htm" hidden><p>選取原本的「審聽信產生器.html」，只讀取信箱、稱呼與署名。檔案在這個瀏覽器內讀取，不會上傳。</p></div>
 </div><div class="dialog-foot"><button class="button" type="button" id="cancelSettings">取消</button><button class="button primary" type="submit">儲存設定</button></div></form></dialog>
 <dialog id="copyDialog" aria-labelledby="copyTitle"><div class="dialog-head"><h2 id="copyTitle">請手動複製</h2><button class="close" aria-label="關閉複製視窗" id="closeCopy">×</button></div><div class="dialog-body"><p>瀏覽器未允許自動複製。文字已選取，可按 Ctrl+C，Mac 請按 ⌘C。</p><textarea id="manualCopy" aria-label="要複製的文字" readonly></textarea></div></dialog>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
@@ -71,7 +101,11 @@ function buildSubject(){const date=fmtDate($('date').value),show=showName(),ep=$
 function buildBody(){const title=$('title').value.trim(),copy=$('copy').value.trim(),extra=$('extra').value.trim();const intro=extra?'附上節目試聽音檔與文稿，'+extra+'，再麻煩您了，謝謝！':settings.intro;let body=(settings.greeting||'您好：')+'\n\n'+intro+'\n';body+='\n（音檔請於 Gmail 中插入附件）\n';if(title)body+='\n標題：\n'+title+'\n';if(copy)body+='\n文案：\n'+copy+'\n';if(settings.signature)body+='\n'+settings.signature;return body;}
 function gmailUrl(){const params=new URLSearchParams({view:'cm',fs:'1',to:settings.to,cc:ccList().join(','),su:buildSubject(),body:buildBody()});return 'https://mail.google.com/mail/?'+params.toString();}
 function render(){ $('otherWrap').hidden=selectedShow()!=='__other__';$('sponsorWrap').hidden=!$('hasSponsor').checked;$('pvSubject').textContent=buildSubject();$('pvBody').textContent=buildBody();$('toLine').textContent=settings.to||'尚未設定';$('ccLine').textContent=ccList().join('、')||'—';$('setupBanner').hidden=!!settings.to;$('longNote').hidden=gmailUrl().length<7500;}
-function switchTab(name,focus=false){const preview=name==='preview';for(const [id,active] of [['editTab',!preview],['previewTab',preview]]){$(id).setAttribute('aria-selected',String(active));$(id).tabIndex=active?0:-1;if(active&&focus)$(id).focus();}$('editPanel').hidden=preview;$('previewPanel').hidden=!preview;render();window.scrollTo({top:0,behavior:'instant'});}
+const desktopLayout=window.matchMedia('(min-width:1024px)');
+let currentView='edit';
+function syncLayout(){const wide=desktopLayout.matches;$('editPanel').hidden=!wide&&currentView==='preview';$('previewPanel').hidden=!wide&&currentView!=='preview';for(const [id,heading,tab] of [['editPanel','editHeading','editTab'],['previewPanel','previewHeading','previewTab']]){$(id).setAttribute('role',wide?'region':'tabpanel');$(id).setAttribute('aria-labelledby',wide?heading:tab);}}
+desktopLayout.addEventListener('change',syncLayout);
+function switchTab(name,focus=false){currentView=name;const preview=name==='preview';for(const [id,active] of [['editTab',!preview],['previewTab',preview]]){$(id).setAttribute('aria-selected',String(active));$(id).tabIndex=active?0:-1;if(active&&focus&&!desktopLayout.matches)$(id).focus();}syncLayout();render();window.scrollTo({top:0,behavior:'instant'});}
 $('editTab').addEventListener('click',()=>switchTab('edit'));
 $('previewTab').addEventListener('click',()=>switchTab('preview'));
 for(const id of ['editTab','previewTab'])$(id).addEventListener('keydown',event=>{if(['ArrowLeft','ArrowRight','Home','End'].includes(event.key)){event.preventDefault();switchTab(event.key==='Home'?'edit':event.key==='End'?'preview':id==='editTab'?'preview':'edit',true);}});
@@ -86,7 +120,13 @@ function populateSettings(value){$('settingTo').value=value.to;$('settingCc').va
 function openSettings(){populateSettings(settings);$('settingsError').hidden=true;$('settingsDialog').showModal();}
 function splitEmails(value){return [...new Set(value.split(/[,;，；、\s]+/).map(v=>v.trim()).filter(Boolean))];}
 function validEmail(value){return /^[^\s@,;<>]+@[^\s@,;<>]+\.[^\s@,;<>]+$/.test(value);}
-$('settingsForm').addEventListener('submit',event=>{event.preventDefault();const next={to:$('settingTo').value.trim(),cc:splitEmails($('settingCc').value),sponsorCc:splitEmails($('settingSponsorCc').value),greeting:$('settingGreeting').value.trim()||DEFAULTS.greeting,signature:$('settingSignature').value.trim(),intro:$('settingIntro').value.trim()||DEFAULTS.intro};const invalid=[next.to,...next.cc,...next.sponsorCc].find(v=>!validEmail(v));if(invalid!==undefined){$('settingsError').textContent='請確認信箱格式：'+(invalid||'收件人不可留空');$('settingsError').hidden=false;return;}settings=next;const saved=write(KEYS.settings,settings);$('settingsDialog').close();render();toast(saved?'已儲存寄信設定':'本次可使用；瀏覽器無法保留設定');});
+function settingsFromForm(){return {to:$('settingTo').value.trim(),cc:splitEmails($('settingCc').value),sponsorCc:splitEmails($('settingSponsorCc').value),greeting:$('settingGreeting').value.trim()||DEFAULTS.greeting,signature:$('settingSignature').value.trim(),intro:$('settingIntro').value.trim()||DEFAULTS.intro};}
+function settingsValid(value){const invalid=[value.to,...value.cc,...value.sponsorCc].find(v=>!validEmail(v));if(invalid!==undefined){$('settingsError').textContent='請確認信箱格式：'+(invalid||'收件人不可留空');$('settingsError').hidden=false;return false;}$('settingsError').hidden=true;return true;}
+$('settingsForm').addEventListener('submit',event=>{event.preventDefault();const next=settingsFromForm();if(!settingsValid(next))return;settings=next;const saved=write(KEYS.settings,settings);$('settingsDialog').close();render();toast(saved?'已儲存寄信設定':'本次可使用；瀏覽器無法保留設定');});
+$('exportSettings').addEventListener('click',()=>{const value=settingsFromForm();if(!settingsValid(value))return;const backup={format:'review-mail-settings',version:1,exportedAt:new Date().toISOString(),settings:value};const blob=new Blob([JSON.stringify(backup,null,2)+'\n'],{type:'application/json;charset=utf-8'});const url=URL.createObjectURL(blob);const link=document.createElement('a');link.href=url;link.download='審聽信設定_'+localDate()+'.json';document.body.append(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);toast('已下載目前欄位的設定備份');});
+function parseSettingsBackup(text){let file;try{file=JSON.parse(text);}catch{throw new Error('無法讀取備份，請選擇從本工具下載的 JSON 設定檔。');}if(!file||file.format!=='review-mail-settings'||file.version!==1)throw new Error('不是支援的設定備份，請選擇從本工具下載的 JSON 檔。');const value=file.settings;if(!value||typeof value!=='object'||!['to','greeting','signature','intro'].every(key=>typeof value[key]==='string')||!['cc','sponsorCc'].every(key=>Array.isArray(value[key])&&value[key].every(item=>typeof item==='string')))throw new Error('備份內容不完整，請重新匯出設定。');if(![value.to,...value.cc,...value.sponsorCc].every(validEmail))throw new Error('備份中的信箱格式不正確，請檢查設定檔。');return normalizeSettings(value);}
+$('loadSettings').addEventListener('click',()=>$('backupFile').click());
+$('backupFile').addEventListener('change',async event=>{const file=event.target.files[0];if(!file)return;try{if(file.size>256*1024)throw new Error('設定檔太大，請選擇從本工具下載的 JSON 備份。');populateSettings(parseSettingsBackup(await file.text()));$('settingsError').hidden=true;toast('已載入備份，確認後按「儲存設定」。');}catch(error){$('settingsError').textContent=error.message;$('settingsError').hidden=false;}finally{event.target.value='';}});
 $('settingsBtn').addEventListener('click',openSettings);$('setupLink').addEventListener('click',openSettings);
 for(const id of ['closeSettings','cancelSettings'])$(id).addEventListener('click',()=>$('settingsDialog').close());
 $('closeCopy').addEventListener('click',()=>$('copyDialog').close());
@@ -103,7 +143,7 @@ $('clearEpisode').addEventListener('click',()=>{if(!confirm('清空本集的集�
 function parseLegacy(text){const getConst=name=>{const match=text.match(new RegExp('const\\s+'+name+'\\s*=\\s*("[^"\\n]*")\\s*;'));return match?JSON.parse(match[1]):null;};const to=getConst('TO');const base=text.match(/const\s+CC_BASE\s*=\s*(\[[\s\S]*?\])\s*;/);if(!to||!base)throw new Error('找不到舊版設定，請選取原本的審聽信 HTML。');const cc=JSON.parse(base[1]),sponsorCc=getConst('CC_SPONSOR');if(!validEmail(to)||!Array.isArray(cc)||!cc.every(v=>typeof v==='string'&&validEmail(v))||(sponsorCc&&!validEmail(sponsorCc)))throw new Error('檔案內的信箱格式不正確，請手動填寫設定。');const greeting=text.match(/let\s+b\s*=\s*"([^"\n]*?)\\n"/);const signature=text.match(/b\s*\+=\s*"\\n([^"\n]+)"\s*;\s*return\s+b\s*;/);return {...DEFAULTS,to,cc,sponsorCc:sponsorCc?[sponsorCc]:[],greeting:greeting?greeting[1]:DEFAULTS.greeting,signature:signature?signature[1]:''};}
 $('importBtn').addEventListener('click',()=>$('importFile').click());
 $('importFile').addEventListener('change',async event=>{const file=event.target.files[0];if(!file)return;try{if(file.size>2*1024*1024)throw new Error('檔案太大，請選取原本的審聽信 HTML。');const imported=parseLegacy(await file.text());populateSettings(imported);$('settingsError').hidden=true;toast('已帶入舊版設定，確認後按「儲存設定」。');}catch(error){$('settingsError').textContent=error.message;$('settingsError').hidden=false;}finally{event.target.value='';}});
-$('date').value=localDate();$('rememberDraft').checked=read(KEYS.remember,true)!==false;if($('rememberDraft').checked)restoreDraft();else remove(KEYS.draft);renderHistory();render();storageState();
+$('date').value=localDate();$('rememberDraft').checked=read(KEYS.remember,true)!==false;if($('rememberDraft').checked)restoreDraft();else remove(KEYS.draft);renderHistory();render();storageState();syncLayout();
 window.addEventListener('pagehide',saveDraft);
 </script></body></html>
 
