@@ -33,11 +33,13 @@
  .actionbar{min-height:78px;padding:15px 0;max-width:1600px;margin:0 auto}.actionbar .button{font-size:16px;min-height:46px;padding:10px 22px}.action-buttons{gap:14px}
  .toast{bottom:94px}.storage-warning{width:100%;max-width:1600px}
 }
+.session-note{font-size:14px;color:var(--muted)}
+@media(max-width:760px){.actionbar{min-height:112px;gap:8px}.toast{bottom:128px}}
 </style></head><body>
 <header class="topbar"><h1>審聽信</h1><button class="settings-button" id="settingsBtn" aria-label="寄信設定"><img class="icon" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTYgMjU2IiBmaWxsPSJjdXJyZW50Q29sb3IiPjxwYXRoIGQ9Ik0xMjgsODBhNDgsNDgsMCwxLDAsNDgsNDhBNDguMDUsNDguMDUsMCwwLDAsMTI4LDgwWm0wLDgwYTMyLDMyLDAsMSwxLDMyLTMyQTMyLDMyLDAsMCwxLDEyOCwxNjBabTEwOS45NC01Mi43OWE4LDgsMCwwLDAtMy44OS01LjRsLTI5LjgzLTE3LS4xMi0zMy42MmE4LDgsMCwwLDAtMi44My02LjA4LDExMS45MSwxMTEuOTEsMCwwLDAtMzYuNzItMjAuNjcsOCw4LDAsMCwwLTYuNDYuNTlMMTI4LDQxLjg1LDk3Ljg4LDI1YTgsOCwwLDAsMC02LjQ3LS42QTExMi4xLDExMi4xLDAsMCwwLDU0LjczLDQ1LjE1YTgsOCwwLDAsMC0yLjgzLDYuMDdsLS4xNSwzMy42NS0yOS44MywxN2E4LDgsMCwwLDAtMy44OSw1LjQsMTA2LjQ3LDEwNi40NywwLDAsMCwwLDQxLjU2LDgsOCwwLDAsMCwzLjg5LDUuNGwyOS44MywxNywuMTIsMzMuNjJhOCw4LDAsMCwwLDIuODMsNi4wOCwxMTEuOTEsMTExLjkxLDAsMCwwLDM2LjcyLDIwLjY3LDgsOCwwLDAsMCw2LjQ2LS41OUwxMjgsMjE0LjE1LDE1OC4xMiwyMzFhNy45MSw3LjkxLDAsMCwwLDMuOSwxLDguMDksOC4wOSwwLDAsMCwyLjU3LS40MiwxMTIuMSwxMTIuMSwwLDAsMCwzNi42OC0yMC43Myw4LDgsMCwwLDAsMi44My02LjA3bC4xNS0zMy42NSwyOS44My0xN2E4LDgsMCwwLDAsMy44OS01LjRBMTA2LjQ3LDEwNi40NywwLDAsMCwyMzcuOTQsMTA3LjIxWm0tMTUsMzQuOTEtMjguNTcsMTYuMjVhOCw4LDAsMCwwLTMsM2MtLjU4LDEtMS4xOSwyLjA2LTEuODEsMy4wNmE3Ljk0LDcuOTQsMCwwLDAtMS4yMiw0LjIxbC0uMTUsMzIuMjVhOTUuODksOTUuODksMCwwLDEtMjUuMzcsMTQuM0wxMzQsMTk5LjEzYTgsOCwwLDAsMC0zLjkxLTFoLS4xOWMtMS4yMSwwLTIuNDMsMC0zLjY0LDBhOC4wOCw4LjA4LDAsMCwwLTQuMSwxbC0yOC44NCwxNi4xQTk2LDk2LDAsMCwxLDY3Ljg4LDIwMWwtLjExLTMyLjJhOCw4LDAsMCwwLTEuMjItNC4yMmMtLjYyLTEtMS4yMy0yLTEuOC0zLjA2YTguMDksOC4wOSwwLDAsMC0zLTMuMDZsLTI4LjYtMTYuMjlhOTAuNDksOTAuNDksMCwwLDEsMC0yOC4yNkw2MS42Nyw5Ny42M2E4LDgsMCwwLDAsMy0zYy41OC0xLDEuMTktMi4wNiwxLjgxLTMuMDZhNy45NCw3Ljk0LDAsMCwwLDEuMjItNC4yMWwuMTUtMzIuMjVhOTUuODksOTUuODksMCwwLDEsMjUuMzctMTQuM0wxMjIsNTYuODdhOCw4LDAsMCwwLDQuMSwxYzEuMjEsMCwyLjQzLDAsMy42NCwwYTguMDgsOC4wOCwwLDAsMCw0LjEtMWwyOC44NC0xNi4xQTk2LDk2LDAsMCwxLDE4OC4xMiw1NWwuMTEsMzIuMmE4LDgsMCwwLDAsMS4yMiw0LjIyYy42MiwxLDEuMjMsMiwxLjgsMy4wNmE4LjA5LDguMDksMCwwLDAsMywzLjA2bDI4LjYsMTYuMjlBOTAuNDksOTAuNDksMCwwLDEsMjIyLjksMTQyLjEyWiIvPjwvc3ZnPg==" alt="">設定</button></header>
 <nav class="tabs" role="tablist" aria-label="信件工作區"><button class="tab" id="editTab" role="tab" aria-selected="true" aria-controls="editPanel">編輯</button><button class="tab" id="previewTab" role="tab" aria-selected="false" aria-controls="previewPanel" tabindex="-1">預覽</button></nav>
 <main>
-<div id="storageWarning" class="storage-warning" hidden>瀏覽器目前無法儲存資料。關閉後不會保留設定與內容。</div>
+<div id="storageWarning" class="storage-warning" hidden>瀏覽器目前無法儲存資料。關閉後不會保留寄信設定。</div>
 <div class="workspace">
 <section id="editPanel" role="tabpanel" aria-labelledby="editTab" class="editor">
 <h2 class="panel-heading" id="editHeading">編輯</h2>
@@ -52,7 +54,7 @@
 <div class="field"><label for="copy">文案</label><textarea id="copy" rows="8" placeholder="貼上本集文案"></textarea></div>
 <div class="field"><label for="extra">備註<span class="optional">（選填）</span></label><input id="extra" type="text" placeholder="例如：臨時加錄、時間比較趕"></div>
 <div class="sponsor-row"><label class="check" for="hasSponsor"><input id="hasSponsor" type="checkbox">有贊助</label></div>
-<div class="field" id="sponsorWrap" hidden><label for="sponsor">贊助單位</label><input id="sponsor" type="text" placeholder="輸入贊助單位名稱"><div class="history" id="sponsorHistory" aria-label="最近使用的贊助單位"></div></div>
+<div class="field" id="sponsorWrap" hidden><label for="sponsor">贊助單位</label><input id="sponsor" type="text" placeholder="輸入贊助單位名稱"></div>
 </form>
 </section>
 <section id="previewPanel" role="tabpanel" aria-labelledby="previewTab" class="preview" hidden>
@@ -65,7 +67,7 @@
 </section>
 </div>
 </main>
-<footer class="actionbar"><label class="check" for="rememberDraft"><input id="rememberDraft" type="checkbox" checked>保留內容</label><div class="action-buttons"><button class="button" id="copySubject">複製主旨</button><button class="button" id="copyBody">複製內文</button><button class="button primary" id="gmailBtn">開啟 Gmail<img class="icon" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTYgMjU2IiBmaWxsPSJjdXJyZW50Q29sb3IiPjxwYXRoIGQ9Ik0yMjQsMTA0YTgsOCwwLDAsMS0xNiwwVjU5LjMybC02Ni4zMyw2Ni4zNGE4LDgsMCwwLDEtMTEuMzItMTEuMzJMMTk2LjY4LDQ4SDE1MmE4LDgsMCwwLDEsMC0xNmg2NGE4LDgsMCwwLDEsOCw4Wm0tNDAsMjRhOCw4LDAsMCwwLTgsOHY3Mkg0OFY4MGg3MmE4LDgsMCwwLDAsMC0xNkg0OEExNiwxNiwwLDAsMCwzMiw4MFYyMDhhMTYsMTYsMCwwLDAsMTYsMTZIMTc2YTE2LDE2LDAsMCwwLDE2LTE2VjEzNkE4LDgsMCwwLDAsMTg0LDEyOFoiLz48L3N2Zz4=" alt=""></button></div></footer>
+<footer class="actionbar"><span class="session-note">本集內容不儲存</span><div class="action-buttons"><button class="button" id="copySubject">複製主旨</button><button class="button" id="copyBody">複製內文</button><button class="button primary" id="gmailBtn">開啟 Gmail<img class="icon" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTYgMjU2IiBmaWxsPSJjdXJyZW50Q29sb3IiPjxwYXRoIGQ9Ik0yMjQsMTA0YTgsOCwwLDAsMS0xNiwwVjU5LjMybC02Ni4zMyw2Ni4zNGE4LDgsMCwwLDEtMTEuMzItMTEuMzJMMTk2LjY4LDQ4SDE1MmE4LDgsMCwwLDEsMC0xNmg2NGE4LDgsMCwwLDEsOCw4Wm0tNDAsMjRhOCw4LDAsMCwwLTgsOHY3Mkg0OFY4MGg3MmE4LDgsMCwwLDAsMC0xNkg0OEExNiwxNiwwLDAsMCwzMiw4MFYyMDhhMTYsMTYsMCwwLDAsMTYsMTZIMTc2YTE2LDE2LDAsMCwwLDE2LTE2VjEzNkE4LDgsMCwwLDAsMTg0LDEyOFoiLz48L3N2Zz4=" alt=""></button></div></footer>
 <dialog id="settingsDialog" aria-labelledby="settingsTitle"><form id="settingsForm"><div class="dialog-head"><h2 id="settingsTitle">寄信設定</h2><button class="close" type="button" aria-label="關閉設定" id="closeSettings">×</button></div><div class="dialog-body"><p>設定一次，以後自動帶入。換瀏覽器或清除網站資料後，需要重新設定。</p>
 <div class="field"><label for="settingTo">收件人信箱</label><input type="email" id="settingTo" required placeholder="name@example.com" autocomplete="off"></div>
 <div class="row field"><div><label class="label" for="settingGreeting">開頭稱呼</label><input type="text" id="settingGreeting" placeholder="例：小美好："></div><div><label class="label" for="settingSignature">署名</label><input type="text" id="settingSignature" placeholder="妳的名字"></div></div>
@@ -80,18 +82,16 @@
 <script>
 'use strict';
 const $=id=>document.getElementById(id);
-const KEYS={settings:'reviewmail_settings_v2',draft:'reviewmail_draft_v2',sponsors:'haoting_sponsors',remember:'reviewmail_remember_v2'};
+const KEYS={settings:'reviewmail_settings_v2'};
 const DEFAULTS={to:'',cc:[],sponsorCc:[],greeting:'您好：',signature:'',intro:'以下是節目的試聽音檔與文稿，再麻煩確認了，謝謝！'};
-const FIELD_IDS=['otherShow','ep','date','title','copy','extra','sponsor'];
-let storageOK=true,toastTimer,saveTimer;
+let storageOK=true,toastTimer;
 function read(key,fallback){try{const value=localStorage.getItem(key);return value===null?fallback:JSON.parse(value);}catch{storageOK=false;return fallback;}}
 function write(key,value){try{localStorage.setItem(key,JSON.stringify(value));return true;}catch{storageOK=false;storageState();return false;}}
 function remove(key){try{localStorage.removeItem(key);}catch{storageOK=false;storageState();}}
 function strings(value){return Array.isArray(value)?value.filter(v=>typeof v==='string'):[];}
 function normalizeSettings(raw){const obj=raw&&typeof raw==='object'?raw:{};const out={...DEFAULTS};for(const key of ['to','greeting','signature','intro'])if(typeof obj[key]==='string')out[key]=obj[key];out.cc=strings(obj.cc);out.sponsorCc=strings(obj.sponsorCc);return out;}
 let settings=normalizeSettings(read(KEYS.settings,null));
-let sponsors=strings(read(KEYS.sponsors,[])).slice(0,8);
-function storageState(){ $('storageWarning').hidden=storageOK;$('saveStatus').textContent=storageOK?($('rememberDraft').checked?'已在此瀏覽器保留':'本集內容不保留'):'目前無法儲存';}
+function storageState(){ $('storageWarning').hidden=storageOK;$('saveStatus').textContent=storageOK?'只有寄信設定會儲存在此瀏覽器':'目前無法儲存寄信設定';}
 function localDate(){const d=new Date();return [d.getFullYear(),String(d.getMonth()+1).padStart(2,'0'),String(d.getDate()).padStart(2,'0')].join('-');}
 function fmtDate(v){if(!/^\d{4}-\d{2}-\d{2}$/.test(v))return '';const d=new Date(v+'T00:00:00');if(Number.isNaN(d.getTime()))return '';return `${d.getMonth()+1}/${d.getDate()}(${['日','一','二','三','四','五','六'][d.getDay()]})`;}
 function selectedShow(){return $('showSelect').value;}
@@ -110,11 +110,6 @@ $('editTab').addEventListener('click',()=>switchTab('edit'));
 $('previewTab').addEventListener('click',()=>switchTab('preview'));
 for(const id of ['editTab','previewTab'])$(id).addEventListener('keydown',event=>{if(['ArrowLeft','ArrowRight','Home','End'].includes(event.key)){event.preventDefault();switchTab(event.key==='Home'?'edit':event.key==='End'?'preview':id==='editTab'?'preview':'edit',true);}});
 function toast(message){clearTimeout(toastTimer);$('toast').textContent=message;$('toast').classList.add('show');toastTimer=setTimeout(()=>$('toast').classList.remove('show'),2600);}
-function draftData(){const draft={show:selectedShow(),hasSponsor:$('hasSponsor').checked};for(const id of FIELD_IDS)draft[id]=$(id).value;return draft;}
-function saveDraft(){if($('rememberDraft').checked)write(KEYS.draft,draftData());storageState();}
-function restoreDraft(){const d=read(KEYS.draft,null);if(!d||typeof d!=='object')return;for(const id of FIELD_IDS)if(typeof d[id]==='string')$(id).value=d[id];if([...$('showSelect').options].some(option=>option.value===d.show))$('showSelect').value=d.show;$('hasSponsor').checked=d.hasSponsor===true;}
-function rememberSponsor(){const value=$('sponsor').value.trim();if(!value)return;sponsors=[value,...sponsors.filter(v=>v!==value)].slice(0,8);write(KEYS.sponsors,sponsors);renderHistory();}
-function renderHistory(){const box=$('sponsorHistory');box.replaceChildren();for(const s of sponsors){const button=document.createElement('button');button.type='button';button.textContent=s;button.addEventListener('click',()=>{$('sponsor').value=s;render();saveDraft();});box.append(button);}}
 async function copyText(text,label){try{if(!navigator.clipboard?.writeText)throw new Error();await navigator.clipboard.writeText(text);toast(label);}catch{ $('manualCopy').value=text;$('copyDialog').showModal();$('manualCopy').focus();$('manualCopy').select();}}
 function populateSettings(value){$('settingTo').value=value.to;$('settingCc').value=value.cc.join(', ');$('settingSponsorCc').value=value.sponsorCc.join(', ');$('settingGreeting').value=value.greeting;$('settingSignature').value=value.signature;$('settingIntro').value=value.intro;}
 function openSettings(){populateSettings(settings);$('settingsError').hidden=true;$('settingsDialog').showModal();}
@@ -131,19 +126,18 @@ $('settingsBtn').addEventListener('click',openSettings);$('setupLink').addEventL
 for(const id of ['closeSettings','cancelSettings'])$(id).addEventListener('click',()=>$('settingsDialog').close());
 $('closeCopy').addEventListener('click',()=>$('copyDialog').close());
 $('episodeForm').addEventListener('submit',event=>event.preventDefault());
-$('episodeForm').addEventListener('input',()=>{render();clearTimeout(saveTimer);saveTimer=setTimeout(saveDraft,180);});
-$('episodeForm').addEventListener('change',()=>{render();saveDraft();});
-$('sponsor').addEventListener('change',rememberSponsor);
-$('rememberDraft').addEventListener('change',()=>{write(KEYS.remember,$('rememberDraft').checked);if($('rememberDraft').checked)saveDraft();else{remove(KEYS.draft);storageState();}toast($('rememberDraft').checked?'已開啟本集內容保留':'本集內容不再保留，畫面上的文字仍可使用');});
+$('episodeForm').addEventListener('input',render);
+$('episodeForm').addEventListener('change',render);
 $('copySubject').addEventListener('click',()=>copyText(buildSubject(),'已複製主旨'));
 $('copyBody').addEventListener('click',()=>copyText(buildBody(),'已複製內文'));
-$('gmailBtn').addEventListener('click',()=>{if(!validEmail(settings.to)){openSettings();return;}if(!$('ep').checkValidity()){switchTab('edit');$('ep').reportValidity();return;}if(selectedShow()==='__other__'&&!showName()){toast('請先填寫節目名稱');switchTab('edit');$('otherShow').focus();return;}if($('hasSponsor').checked&&!$('sponsor').value.trim()){toast('請先填寫贊助單位');switchTab('edit');$('sponsor').focus();return;}if($('hasSponsor').checked)rememberSponsor();saveDraft();window.open(gmailUrl(),'_blank','noopener,noreferrer');toast('已要求開啟 Gmail；若未出現，請允許彈出視窗。');});
-$('clearEpisode').addEventListener('click',()=>{if(!confirm('清空本集的集數、標題、文案、備註與贊助資訊？節目選擇和寄信設定會保留。'))return;clearTimeout(saveTimer);for(const id of ['ep','title','copy','extra','sponsor','otherShow'])$(id).value='';$('date').value=localDate();$('hasSponsor').checked=false;render();saveDraft();$('settingsDialog').close();switchTab('edit');$('title').focus();toast('已清空本集內容');});
+$('gmailBtn').addEventListener('click',()=>{if(!validEmail(settings.to)){openSettings();return;}if(!$('ep').checkValidity()){switchTab('edit');$('ep').reportValidity();return;}if(selectedShow()==='__other__'&&!showName()){toast('請先填寫節目名稱');switchTab('edit');$('otherShow').focus();return;}if($('hasSponsor').checked&&!$('sponsor').value.trim()){toast('請先填寫贊助單位');switchTab('edit');$('sponsor').focus();return;}window.open(gmailUrl(),'_blank','noopener,noreferrer');toast('已要求開啟 Gmail；若未出現，請允許彈出視窗。');});
+$('clearEpisode').addEventListener('click',()=>{if(!confirm('清空本集的集數、標題、文案、備註與贊助資訊？節目選擇和寄信設定會保留。'))return;for(const id of ['ep','title','copy','extra','sponsor','otherShow'])$(id).value='';$('date').value=localDate();$('hasSponsor').checked=false;render();$('settingsDialog').close();switchTab('edit');$('title').focus();toast('已清空本集內容');});
 // 舊版檔案只當文字解析，不會執行其中的程式。
 function parseLegacy(text){const getConst=name=>{const match=text.match(new RegExp('const\\s+'+name+'\\s*=\\s*("[^"\\n]*")\\s*;'));return match?JSON.parse(match[1]):null;};const to=getConst('TO');const base=text.match(/const\s+CC_BASE\s*=\s*(\[[\s\S]*?\])\s*;/);if(!to||!base)throw new Error('找不到舊版設定，請選取原本的審聽信 HTML。');const cc=JSON.parse(base[1]),sponsorCc=getConst('CC_SPONSOR');if(!validEmail(to)||!Array.isArray(cc)||!cc.every(v=>typeof v==='string'&&validEmail(v))||(sponsorCc&&!validEmail(sponsorCc)))throw new Error('檔案內的信箱格式不正確，請手動填寫設定。');const greeting=text.match(/let\s+b\s*=\s*"([^"\n]*?)\\n"/);const signature=text.match(/b\s*\+=\s*"\\n([^"\n]+)"\s*;\s*return\s+b\s*;/);return {...DEFAULTS,to,cc,sponsorCc:sponsorCc?[sponsorCc]:[],greeting:greeting?greeting[1]:DEFAULTS.greeting,signature:signature?signature[1]:''};}
 $('importBtn').addEventListener('click',()=>$('importFile').click());
 $('importFile').addEventListener('change',async event=>{const file=event.target.files[0];if(!file)return;try{if(file.size>2*1024*1024)throw new Error('檔案太大，請選取原本的審聽信 HTML。');const imported=parseLegacy(await file.text());populateSettings(imported);$('settingsError').hidden=true;toast('已帶入舊版設定，確認後按「儲存設定」。');}catch(error){$('settingsError').textContent=error.message;$('settingsError').hidden=false;}finally{event.target.value='';}});
-$('date').value=localDate();$('rememberDraft').checked=read(KEYS.remember,true)!==false;if($('rememberDraft').checked)restoreDraft();else remove(KEYS.draft);renderHistory();render();storageState();syncLayout();
-window.addEventListener('pagehide',saveDraft);
+// 本集資料只留在目前頁面；清除舊版暫存，保留寄信設定。
+for(const key of ['reviewmail_draft_v2','reviewmail_remember_v2','haoting_sponsors'])remove(key);
+$('episodeForm').reset();$('date').value=localDate();render();storageState();syncLayout();
 </script></body></html>
 
